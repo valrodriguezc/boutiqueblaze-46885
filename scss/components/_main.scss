@@ -1,0 +1,149 @@
+/*!---------------MAIN-------------------*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    color: nth($colores, 2);
+    background-image: url("../img/fondoheather.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include flex (flex, column, center, center);
+    h2{
+        font-size: 80px;
+        text-shadow: 1px 1px 1px nth($colores, 3);
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 50px;
+        text-shadow: 1px 1px 1px nth($colores, 3);
+    }
+    a{ 
+        text-decoration: none;
+        color: nth($colores, 2);
+        background-color: nth($colores, 7);
+        padding: 5px;
+        font-size: 20px;
+        &:hover{
+            background-color: nth($colores, 5);
+            color: nth($colores, 1);
+        }
+    }
+}
+/**---------------INDEX."CATEGORIAS"-------------------**/
+.grid-categorias{
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 88vh;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.categorias-item{
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    div{
+        position: absolute;
+        bottom: 0;
+        color: nth($colores, 2);
+        background-color: nth($colores, 7);
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: nth($colores, 1);
+            background-color: nth($colores, 4);
+            padding: 1px;
+            &:hover{
+                background-color: nth($colores, 5);
+                color: nth($colores, 1);
+            }
+        }
+    }
+}
+/**---------------PAGE."PRODUCTOS"---------------**/
+/*--GRID CATALOGO--*/
+.grid-productos{
+    margin: 67.55px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 435px;
+    gap: 40px;
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.29);
+            -webkit-box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.29);
+            -moz-box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.29);
+        }
+    }
+}
+.grid-item{
+    position: relative;
+    div{
+        position: absolute;
+        bottom: 0;
+        color: nth($colores, 2);
+        background-color: nth($colores, 7);
+        width: 100%;
+        padding: 2px;
+        text-align: center;
+        font-family: 'News Cycle', sans-serif; 
+        p{
+            margin: 0
+        }
+    }
+}
+/**---------------P.CONTACTO-------------------*/
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    background-color: nth($colores, 8);
+    flex-wrap: wrap;
+}
+.titulo-formulario{
+    text-align: center;
+}
+.contacto-formulario{
+/* Arriba | Derecha | Abajo | Izquierda */
+    margin: 70px 0 10px 15px;
+}
+.form-control {
+    width: 95%
+}
+.contacto-ubicanos{
+    margin: 70px 15px 0 0;
+}
+/**---------------P.MI CUENTA-------------------*/
+
+.mi-cuenta{
+    margin: 57.55px 0 0 0;
+    padding: 50px 0 50px 0;
+    background-color: nth($colores, 8);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: nth($colores, 1);
+    @include flex (flex, column, center, center);
+}
+.formulario-mi-cuenta{
+    width: 30%;
+}
+/**---------------P.CARRITO-------------------*/
+.carrito{
+    padding: 100px 0 15px 0;
+    background-color: nth($colores, 8);
+    @include flex (flex, column, center, center);
+    h2{
+        /* Arriba | Derecha | Abajo | Izquierda */
+        margin: 133px 0 133px 0;
+    }
+}
