@@ -48,9 +48,13 @@
         gap: 20px;
     }
 }
-
 @media screen and (max-width:450px){
     .formulario-mi-cuenta{
         width: 60%;
+    }   
+}
+@media screen and (max-width:475px){
+    .img-logobb{
+        width: 240px;
     }   
 }

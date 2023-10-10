@@ -1,16 +1,12 @@
 //* COLORES
-// Para llamarlo en scss: 
-//! variable: nth ($, n° orden);
-
 $colores:
 rgb(0, 0, 0),                       //1 - Negro
 rgb(255, 255, 255),                 //2 - Blanco
 rgb(167, 167, 167),                 //3 - Sombra
 rgba(210, 196, 151, 0.8),           //4 - bgc"a"
 rgba(255, 255, 255, 0.61),          //5 - bgc"hover"
-rgb(254, 235, 190),                 //6- bgc"footer"
-rgba(0, 0, 0, 0.359),               //7 -bgc negro transparente
-rgb(211, 205, 189);                 //8-bgc"pages"
+rgba(0, 0, 0, 0.359),               //6 -bgc negro transparente
+rgb(255, 247, 224);                //7-bgc"pages"
 
 //* MIXINS
 @mixin flex ($flex, $direction, $justify, $align){
@@ -19,4 +15,3 @@ rgb(211, 205, 189);                 //8-bgc"pages"
     justify-content: $justify;
     align-items: $align;
 }
-
