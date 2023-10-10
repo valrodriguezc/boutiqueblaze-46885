@@ -1,3 +1,5 @@
+//* FONT SIZE
+$fs-pages: 40px;
 //* COLORES
 $colores:
 rgb(0, 0, 0),                       //1 - Negro
@@ -14,4 +16,13 @@ rgb(255, 247, 224);                //7-bgc"pages"
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+}
+
+//* EXTENDS
+%sombra{
+    text-shadow: 1px 1px 1px nth($colores, 3);
+}
+%hover-boton{
+    background-color: nth($colores, 5);
+    color: nth($colores, 1);
 }
