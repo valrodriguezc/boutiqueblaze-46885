@@ -2,10 +2,6 @@
 .hero h2, .hero p {
   text-shadow: 1px 1px 1px #a7a7a7; }
 
-.hero a:hover, .categorias-item div a:hover {
-  background-color: rgba(255, 255, 255, 0.61);
-  color: black; }
-
 /*!---------------RESET-------------------*/
 * {
   margin: 0;
@@ -56,7 +52,11 @@ body {
     color: white;
     background-color: rgba(0, 0, 0, 0.359);
     padding: 5px;
-    font-size: 20px; }
+    font-size: 20px;
+    transition: 0.5s; }
+    .hero a:hover {
+      background-color: rgba(255, 255, 255, 0.61);
+      color: black; }
 
 /**---------------INDEX."CATEGORIAS"-------------------**/
 .grid-categorias {
@@ -85,7 +85,12 @@ body {
       text-decoration: none;
       color: black;
       background-color: rgba(210, 196, 151, 0.8);
-      padding: 1px; }
+      /* arriba | derecha | abajo | izquierda */
+      padding: 0px 5px 0px 5px;
+      transition: 0.5s; }
+      .categorias-item div a:hover {
+        background-color: rgba(255, 255, 255, 0.61);
+        color: black; }
 
 /**---------------PAGE."PRODUCTOS"---------------**/
 /*--GRID CATALOGO--*/

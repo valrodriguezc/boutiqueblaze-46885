@@ -24,8 +24,10 @@
         background-color: nth($colores, 6);
         padding: 5px;
         font-size: 20px;
+        transition: 0.5s;
         &:hover{
-            @extend %hover-boton;
+            background-color: nth($colores, 5);
+            color: nth($colores, 1);
         }
     }
 }
@@ -57,9 +59,12 @@
             text-decoration: none;
             color: nth($colores, 1);
             background-color: nth($colores, 4);
-            padding: 1px;
+            /* arriba | derecha | abajo | izquierda */
+            padding: 0px 5px 0px 5px;
+            transition: 0.5s;
             &:hover{
-                @extend %hover-boton;
+                background-color: nth($colores, 5);
+                color: nth($colores, 1);
             }
         }
     }
